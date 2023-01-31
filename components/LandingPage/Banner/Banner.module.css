@@ -1,0 +1,90 @@
+.BannerContainer {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f31010;
+  background-image: url("../../../public/assets/landPage/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.7; */
+}   
+.Banner{
+    max-width: 100%;
+    width: 100%; 
+    height: max-content;
+    display: flex; 
+    position: relative;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+.Informacion{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 52vh;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 2%;
+}
+.Informacion_title{
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+}
+.Beneficios{
+    width: 100%; 
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.ItemBeneficios{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding:1%;
+}
+.imgBeneficios{
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .BannerContainer {
+        height: 100vh;
+    }
+    .Banner{
+        font-size: 1rem;
+    }
+    .Informacion{
+        font-size: 1rem;
+    }
+    .Informacion_title{
+        margin-top: 10%;
+        font-size: 1.8rem;
+    }
+    .Beneficios{
+        flex-direction: column;
+    }
+    .ItemBeneficios{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+    .imgBeneficios{
+        width: 50px;
+        height: 50px;
+    }
+}
+    

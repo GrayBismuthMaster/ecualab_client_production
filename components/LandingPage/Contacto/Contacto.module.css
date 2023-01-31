@@ -1,0 +1,158 @@
+.contacto_container{
+    display: flex;
+    width: 100%;
+    height: 87vh;
+    background: linear-gradient(to left, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+  
+    
+}
+.contacto_container_left{
+    display: flex;
+    width: 50%;
+    height: 100%;  
+    background-image: url("../../../public/assets/landPage/Contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.contacto_container_right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.contacto_container_card{
+    display: flex;
+    margin-right: 8%;
+    width: 75%;
+    height: 80%;
+    border-radius: 8%;
+    position: relative;
+}
+
+.contacto_container_card::after{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    content: '';
+    background: linear-gradient(to left, #26a0da, #314755); 
+    width: 100%;
+    height: 100%;
+    filter:blur(10px);
+    z-index: -1;
+}
+
+/*
+    Formulario styles
+*/
+.form{
+    background-color: rgba(0, 0, 0, 0.632);
+    margin:auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 3%;
+    color: rgb(238, 224, 224);
+    height: 100%;
+}
+.form_title{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_group{
+    position: relative;
+    --color: #5757577e;
+
+}
+.form_input{
+    width: fit-content;
+    background:none;
+    color: #706c6c;
+    outline: none;
+    font-size: 1rem;
+    padding: .6em 3em;
+    border: none;
+    border-bottom: 1px solid var(--color);
+
+}
+
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown)+ .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+
+}
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown)~ .form_line{
+    transform: scale(1)
+}
+
+.form_submit{
+    background: #3866f2;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.form_submit:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.contactoLabels {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+@media(max-width: 425px){
+    .form-title{
+        font-size: 1.8rem;
+    }
+}

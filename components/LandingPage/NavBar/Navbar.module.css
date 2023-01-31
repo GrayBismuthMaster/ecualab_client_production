@@ -1,0 +1,49 @@
+.navBar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    flex-direction: row;
+    background-color: #f8f9fd;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+.logo{
+    height: 83%;
+    width: 5%;
+    max-width: 100%;
+    margin-top: 0.5%;
+    margin-left: 10%;
+    background-image: url('../../../public/assets/landPage/logoBorder.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+.containerItems{
+    width: 80%;
+    height: 100%;
+}
+.itemsNavbar{
+    display: flex;
+    width: 12%;
+    height: 50%;
+    margin-top: 2%;
+    margin-right: 3%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    color: #5597ff;   
+    border-radius: 10px;
+}
+.itemsNavbar:hover{
+    padding-bottom: .5rem;
+    background-color: white;
+    
+    color: #5597ff;
+    border-bottom: .1rem solid #5597ff;
+}

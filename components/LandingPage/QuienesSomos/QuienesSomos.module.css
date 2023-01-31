@@ -1,0 +1,89 @@
+
+.QuienesSomos__container{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    height: 87vh;
+    width: 99%;
+    background-color: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF,  #05090b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #0d1a22); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    position: relative;
+    z-index: -1;
+}
+.Container_title{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 13vh;
+    justify-content: center;
+    align-items: center;
+}
+.Container_contenido{
+    display: flex;
+    width: 100%;
+    height: 74vh;
+    background-color: transparent;
+    
+    margin:1%;
+}
+.Container_contenido_informacion{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+
+}
+.Container_contenido_informacion_superior{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.2);
+    
+}
+.Container_contenido_informacion_inferior{
+    display: flex;
+    padding: 5% 8%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.ContainerImg{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+}
+.ContainerMisionVisionImg{
+    display: flex;
+    width: 50%;
+    height: 80%;
+    position: relative;
+}
+.MisionImg{
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0.8;
+    border-radius: 2%;
+    margin-right: 4%;
+
+}
+.ContainerMisionVisionImg::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    filter:blur(10px);
+    z-index: -1;
+}
+
