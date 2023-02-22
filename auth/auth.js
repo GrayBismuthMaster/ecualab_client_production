@@ -2,7 +2,7 @@ import jwtDecode from 'jwt-decode';
 const ACCESS_TOKEN_KEY = 'token';
 // const API_URL = 'https://server.crissol.link';
 
-const API_URL = 'http://localhost:9000';
+const API_URL = 'https://server.ecualabsa.com';
 const ISSERVER = typeof window === "undefined";
 
 export function getAccessToken() {

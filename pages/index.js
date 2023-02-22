@@ -7,7 +7,7 @@ import {useRouter} from 'next/router'
 import Link from 'next/link';
 // const API_URL = 'https://server.crissol.link'
 
-const API_URL = 'http://localhost:9000'
+const API_URL = 'https://server.ecualabsa.com'
 // const AUTENTICAR_USUARIO = gql`
 //     mutation autenticarUsuario($input:AutenticarInput)
 //     {

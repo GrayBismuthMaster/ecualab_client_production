@@ -10,7 +10,7 @@ import { getAccessToken } from '../auth/auth';
 
 const httpLink = new HttpLink({
     // uri: 'https://server.crissol.link/graphql',
-    uri : 'http://localhost:9000/graphql'
+    uri : 'https://server.ecualabsa.com/graphql'
   });
   
 
